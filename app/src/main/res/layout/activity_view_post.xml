@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="13dp"
+    android:orientation="vertical"
+    android:background="@drawable/white_layout_corners">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/purple"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/back_icon"
+            android:focusableInTouchMode="true"
+            android:paddingRight="10dp"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/toolBarText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="11.5dp"
+            android:focusableInTouchMode="true"
+            android:paddingRight="10dp"
+            android:text="Post"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    </Toolbar>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="25dp"
+        android:layout_gravity="center"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/purple"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/post_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        tools:ignore="NotSibling" />
+    <!--<View-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0.1mm"-->
+        <!--android:paddingBottom="2dp"-->
+        <!--android:layout_below="@+id/postTime"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="#000" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/comment_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        tools:ignore="NotSibling" />
+</LinearLayout>

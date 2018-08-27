@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rabee.breath">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".Services.FirebaseServices.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+
+        </service>
+        <service android:name=".Services.FirebaseServices.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.SettingsActivity" />
+        <activity android:name=".Activities.ChangeAccountInfoActivities.ChangePasswordActivity" />
+        <activity android:name=".Activities.ChangeAccountInfoActivities.ChangeEmailActivity" />
+        <activity android:name=".Activities.ChangeAccountInfoActivities.ChangeMobileActivity" />
+        <activity android:name=".Activities.OneTimeLogInActivity" />
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.SignUpActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:label="@string/title_activity_home"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity
+            android:name=".Activities.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activities.UserProfileActivity" />
+        <activity android:name=".Activities.SplashActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Activities.UserYoutubeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".Activities.FollowingActivity" />
+        <activity android:name=".Activities.EditProfileActivity" />
+        <activity android:name=".Activities.OtherProfileActivity" />
+        <activity android:name=".Activities.YoutubeDialogActivity" />
+        <activity android:name=".Activities.ReactActivity" />
+        <activity android:name=".Activities.AddPostActivity" />
+        <activity android:name=".Activities.CommentActivity" />
+        <activity android:name=".Activities.ReplyActivity" />
+        <activity android:name=".Activities.AddCommentActivity" />
+        <activity android:name=".Activities.RecentCommentsActivity" />
+        <activity android:name=".Activities.SavedPostActivity" />
+        <activity android:name=".Activities.ViewPostActivity"></activity>
+    </application>
+
+</manifest>

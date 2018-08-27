@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/purple"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/toolBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/back_icon"
+            android:focusableInTouchMode="true"
+            android:paddingRight="10dp"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/FriendshipTabType"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:paddingRight="45dp"
+            android:text="Edit Email Address"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+    </Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:minLines="2"
+            android:paddingLeft="13dp"
+            android:text="Account Password"
+            android:textColor="@color/purple"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="#b1b1b1"
+            android:clickable="true"
+            android:id="@+id/passwordText"
+            android:paddingLeft="7dp"
+            android:paddingRight="10dp"
+            android:inputType="textPassword"
+            android:text=""
+            android:textColor="#72000000"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:minLines="2"
+            android:paddingLeft="13dp"
+            android:text="New Email"
+            android:textColor="@color/purple"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/newEmailText"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="#b1b1b1"
+            android:clickable="true"
+            android:paddingLeft="7dp"
+            android:paddingRight="10dp"
+            android:textColor="#72000000"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textColor="@color/purple"
+        android:id="@+id/saveNewEmail"
+        android:text="Save"
+        android:textAllCaps="false"/>
+</LinearLayout>

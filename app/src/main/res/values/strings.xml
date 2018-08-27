@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RecyclerViewSpeedTest</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="facebook_app_id">1256693817801117</string>
+    <string name="fb_login_protocol_scheme">fb1256693817801117</string>
+    <string name="server_client_id">283243462011-merkj4aoglmvj7njrnkqbfogctln9b89.apps.googleusercontent.com</string>
+</resources>

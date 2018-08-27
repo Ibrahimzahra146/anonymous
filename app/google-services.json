@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "283243462011",
+    "firebase_url": "https://fir-breath.firebaseio.com",
+    "project_id": "firebase-breath",
+    "storage_bucket": "firebase-breath.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283243462011:android:7fecdfb4c09190e6",
+        "android_client_info": {
+          "package_name": "com.example.rabee.breath"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283243462011-merkj4aoglmvj7njrnkqbfogctln9b89.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "283243462011-63sts0savm58dj146d2d8vur45i00bif.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rabee.breath",
+            "certificate_hash": "f426a154bb85cd192f28e7511f77524b05e6d9fe"
+          }
+        },
+        {
+          "client_id": "283243462011-i7bipq8au68pmfkvvra8ak4iojst1ein.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAButxTx2gBsfDqIF9hleObAIebsanbyVI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283243462011-merkj4aoglmvj7njrnkqbfogctln9b89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

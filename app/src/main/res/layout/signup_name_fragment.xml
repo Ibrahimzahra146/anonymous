@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="45dp"
+    android:paddingRight="45dp"
+    android:paddingTop="30dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="cursive"
+            android:text="Sign Up"
+            android:textColor="@color/purple"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="5dp"
+            android:ems="20"
+            android:focusableInTouchMode="true"
+            android:hint="Frist Name"
+            android:inputType="text"
+            android:textColor="#000"
+            android:textColorHint="@color/purple"
+            android:textSize="45px" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="5dp"
+            android:ems="20"
+            android:hint="Last Name"
+            android:inputType="text"
+            android:textColor="#000"
+            android:textColorHint="@color/purple"
+            android:textSize="45px" />
+
+        <Button
+            android:id="@+id/nextBtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="310dp"
+            android:background="@drawable/selector_xml_btn_yellow"
+            android:padding="3dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/purple"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nextBtn"
+            android:layout_marginTop="50dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

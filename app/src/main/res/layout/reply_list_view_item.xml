@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/replyLayout"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/comment_layout_corner"
+        android:paddingBottom="0dp"
+        android:paddingTop="5dp">
+
+
+        <TextView
+            android:id="@+id/replyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-thin"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Sometimes i think that if she had never left 5H, this song wouldn't even exist and I feel so lucky for her decision"
+            android:textColor="@color/cardview_dark_background"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/repliesNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/replyText"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="7dp" />
+
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/purple"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/repliesNumber"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="15dp"
+            android:paddingRight="20dp"
+            android:text="3w"
+            android:textColor="@color/purple"
+            android:textSize="11dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:paddingBottom="2dp"
+        android:layout_below="@+id/replyLayout"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#D3D3D3" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="35dp"
+    android:layout_marginTop="20dp">
+
+
+    <TextView
+        android:id="@+id/EditPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:minLines="2"
+        android:text="Change Profile Picture"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ViewPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditPic"
+        android:background="@android:color/transparent"
+        android:minLines="2"
+        android:text="View Profile Picture"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/RemovePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ViewPic"
+        android:background="@android:color/transparent"
+        android:minLines="2"
+        android:text="Remove Profile Picture"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

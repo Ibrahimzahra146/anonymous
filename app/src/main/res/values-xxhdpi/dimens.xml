@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_activity_text">16sp</dimen>
+    <dimen name="other_profile_activity">18sp</dimen>
+    <dimen name="general_title_size">18sp</dimen>
+    <dimen name="general_subtitle_size">16sp</dimen>
+    <dimen name="date_picker_width">1300dp</dimen>
+    <dimen name="date_picker_height">170dp</dimen>
+    <dimen name="fragment_settings_image_size">70dp</dimen>
+    <dimen name="fragment_settings_subtitle">15sp</dimen>
+    <dimen name="postCommentCounterFont">12sp</dimen>
+
+
+</resources>

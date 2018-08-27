@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55eeeeee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:focusableInTouchMode="true"
+        android:background="?attr/colorPrimary"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/toolBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/back_icon"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/FriendshipTabType"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Settings"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Save"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textSize="15dp"
+            android:id="@+id/saveSettings"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="15dp"
+                android:text="Profile Settings"
+                android:textAllCaps="false"
+                android:textSize="16.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_layout_corners"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:text="Edit Profile"
+                    android:id="@+id/editProfileLabel"
+                    android:textAllCaps="false"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#9a999999" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:text="Email Address"
+                    android:id="@+id/changeEmailLabel"
+                    android:textAllCaps="false"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:id="@+id/userMail"
+                    android:textAllCaps="false"
+                    android:textColor="#b1b1b1"
+                    android:textSize="13dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#9a999999" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:id="@+id/changeMobileLabel"
+                    android:text="Mobile Number"
+                    android:textAllCaps="false"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:id="@+id/userMobile"
+                    android:textAllCaps="false"
+                    android:textColor="#b1b1b1"
+                    android:textSize="13dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#9a999999" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:text="Change Password"
+                    android:id="@+id/changePasswordLabel"
+                    android:textAllCaps="false"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="15dp"
+                android:text="Privacy"
+                android:textAllCaps="false"
+                android:textSize="16.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_layout_corners"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:text="Private Account"
+                    android:textAllCaps="false"
+                    android:textSize="15dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Private"
+                        android:textColor="#717171"
+                        android:id="@+id/privateAccountRadio"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"
+                        android:textSize="18dp"
+                        android:buttonTint="@color/purple"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:textColor="#717171"
+                        android:id="@+id/publicAccountRadio"
+                        android:buttonTint="@color/purple"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"
+                        android:textSize="18dp"
+                        android:text="Public"/>
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#9a999999" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:text="Who can see my profile picture"
+                    android:textAllCaps="false"
+                    android:textSize="15dp" />
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Private"
+                        android:textColor="#717171"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"
+                        android:id="@+id/privateProfilePictureRadio"
+                        android:buttonTint="@color/purple"
+                        android:textSize="18dp"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:id="@+id/publicProfilePictureRadio"
+                        android:textColor="#717171"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"
+                        android:buttonTint="@color/purple"
+                        android:textSize="18dp"
+                        android:text="Public"/>
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/white_layout_corners"
+                android:orientation="vertical"
+                android:paddingTop="15dp"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:text="Theme Color"
+                    android:textAllCaps="false"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#9a999999" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="#00222222"
+                            android:layout_marginLeft="100dp"
+                            android:scaleX="2.2"
+                            android:buttonTint="@color/purple"
+                            android:id="@+id/purpleColorRadio"
+                            android:scaleY="2.2"/>
+
+                        <at.markushi.ui.CircleButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="-70dp"
+                            android:id="@+id/purpleColorBtn"
+                            app:cb_color="@color/purple"/>
+
+                        <RadioButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="60dp"
+                            android:scaleX="2.2"
+                            android:buttonTint="@color/green"
+                            android:id="@+id/greenColorRadio"
+                            android:scaleY="2.2"/>
+
+                        <at.markushi.ui.CircleButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/greenColorBtn"
+                            android:layout_marginLeft="-70dp"
+                            app:cb_color="@color/green"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="15dp"
+                android:text="Deactivate Account"
+                android:textAllCaps="false"
+                android:textSize="16.5dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/purple"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/toolBarText"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:drawableLeft="@drawable/back_icon"
+                android:focusableInTouchMode="true"
+                android:paddingRight="10dp"
+                android:textColor="#fff"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/following_label"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:focusableInTouchMode="true"
+                android:paddingRight="10dp"
+                android:text="Followers"
+                android:textColor="#fff"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+        </Toolbar>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/no_friends_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/circle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/no_following" />
+
+            <TextView
+                android:id="@+id/TextBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="-1dp"
+                android:fontFamily="cursive"
+                android:text="   No Following To Show"
+                android:textAlignment="center"
+                android:textColor="#878787"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/ProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:indeterminateTint="@color/purple" />
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

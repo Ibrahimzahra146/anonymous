@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#880e4f</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="purple">#880e4f</color>
+    <color name="notify">#f2ecf5</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#d626a69a</color>
+    <!--
+    880e4f
+    003380
+    13978b
+    #d626a69a
+    -->
+</resources>

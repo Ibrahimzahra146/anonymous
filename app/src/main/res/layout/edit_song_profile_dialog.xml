@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/about_friend_dialog_background"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:minLines="2"
+                android:paddingLeft="13dp"
+                android:text="Song"
+                android:textColor="@color/purple"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/songTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/purple"
+                android:clickable="true"
+                android:paddingLeft="7dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="#72000000"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/saveSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/purple"
+            android:textSize="15dp" />
+
+        <!--     <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_margin="8dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="10dp"
+                     android:minLines="2"
+                     android:paddingLeft="13dp"
+                     android:text="Song"
+                     android:textColor="@color/purple"
+                     android:textStyle="bold"
+
+
+                     />
+
+                 <EditText
+                     android:id="@+id/Song"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="18dp"
+                     android:layout_marginRight="15dp"
+                     android:layout_marginTop="30dp"
+                     android:backgroundTint="@color/purple"
+                     android:clickable="true"
+                     android:paddingLeft="7dp"
+                     android:paddingRight="10dp"
+                     android:text=""
+                     android:textColor="#72000000"
+                     android:textSize="15dp" />
+             </RelativeLayout>-->
+    </LinearLayout>
+
+</ScrollView>
